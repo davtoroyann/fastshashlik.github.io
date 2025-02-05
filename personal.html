@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Title -->
+    <title>Fastest Шашлык</title>
+  </head>
+  <body>
+    <!-- ================================================================= -->
+    <div class="page_wrapper">
+      <div class="big_Container">
+        <!-- Header ====================================================== -->
+        <header class="header">
+          <div class="header__container __container">
+            <div class="header__logo">
+              <a href="index.html"><img src="img/header/logo1.svg" alt="Fastest Шашлык" title="Fastest Шашлык" id="logo"></a>
+            </div>
+            <nav class="header__nav menu">
+              <ul class="header__menu">
+                <li class="header__item"><a href="menu.html" title="Меню">Меню</a></li>
+                <li class="header__item"><a href="discount.html" title="Акции и скидки">Акции и скидки</a></li>
+                <li class="header__item"><a href="delivery.html" title="Доставка и оплата">Доставка и оплата</a></li>
+                <li class="header__item"><a href="about.html" title="О нас">О нас</a></li>
+                <li class="header__item"><a href="contacts.html" title="Контакты">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__tools">
+              <div class="header__basket">
+                <a href="cart.html">
+                  <img id="basket" src="img/header/basket1.svg" alt="Корзина" title="Корзина">
+                  <span id="cartCount">0</span>
+                </a>
+                <span class="header__tools-title">Корзина</span>
+              </div>
+              <div class="header__signup">
+                <a href="account.html"><img id="signUp" src="img/header/user1.svg" alt="Sign Up Icon" title="Войти"></a>
+                <span class="header__tools-title">Войти</span>
+              </div>
+            </div>
+            <!-- Burger-Menu -->
+            <div class="header__burger-menu burger-menu">
+              <div class="burger-menu__icon">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main ======================================================== -->
+        <main class="main">
+          <div class="main__container">
+            <!-- Personal -->
+            <div class="main__personal personal">
+                <div class="personal__container __container">
+                    <div class="breadcumb__frame">
+                        <nav aria-label="breadcrumb">
+                            <ul class="breadcrumb">
+                                <li><a href="/">Главная</a></li>
+                                <li>Личный Кабинет</li>
+                            </ul>
+                        </nav>
+                      </div>
+                      <h2 class="personal__title title">Личный Кабинет</h2>
+                      <div class="personal__body">
+                        <span class="personal__line line"></span>
+                        <div class="personal__frame">
+                            <div class="personal__panel panel">
+                                <div class="panel__frame">
+                                    <button class="panel__item item-panel panel__account" data-type="account">
+                                        <div class="item-panel__icon item-panel__icon-1"><img src="img/personal/account.svg" alt="Икона человека" title="Учетный Запись"></div>
+                                        <div class="item-panel__title"><span>Моя учетная запись</span></div>
+                                    </button>
+                                    <button class="panel__item item-panel panel__order" data-type="order">
+                                        <div class="item-panel__icon item-panel__icon-2"><img src="img/personal/order.svg" alt="Икона Товара" title="История Заказов"></div>
+                                        <div class="item-panel__title"><span>История Заказов</span></div>
+                                    </button>
+                                    <button class="panel__item item-panel panel__pass-change" data-type="pass-change">
+                                        <div class="item-panel__icon item-panel__icon-3"><img src="img/personal/lock.svg" alt="Икона замка" title="Изменить Пароль"></div>
+                                        <div class="item-panel__title"><span>Изменить Пароль</span></div>
+                                    </button>
+                                    <button type="submit" class="panel__exit-btn red-btn">
+                                        <span>Выйти</span>
+                                        <span class="red-btn__banner"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="personal__content content-personal">
+                                <div class="content-personal__body">
+                                    <h3 class="content-personal__title title">Ваша учетная запись</h3>
+                                    <form action="/submit" method="get" id="regForm">
+                                        <div class="content-personal__contacts contacts">
+                                          <div class="content-personal__contacts-frame contacts-frame">
+                                            <input type="text" name="name" id="name" placeholder="Имя" autocomplete="off">
+                                            <input type="text" name="number" id="number" placeholder="Телефон*" autocomplete="off" required>
+                                          </div>
+                                        </div>
+                                        <div class="content-personal__address address">
+                                          <div class="content-personal__address-street address-street">
+                                            <input type="text" name="home" id="home" placeholder="Улица, Дом / Корпус" autocomplete="off" >
+                                          </div>
+                                          <div class="content-personal__address-floor address-floor">
+                                            <input type="text" name="front" id="front" placeholder="Подьезд" autocomplete="off">
+                                            <input type="text" name="floor" id="floor" placeholder="Этаж" autocomplete="off">
+                                            <input type="text" name="apartment" id="apartment" placeholder="Квартира" autocomplete="off">
+                                          </div>
+                                        </div>
+                                        <div class="content-personal__mail mail">
+                                          <input type="email" name="mail" id="mail" placeholder="Email*" autocomplete="off" required>
+                                        </div>
+                                        <div class="content-personal__reg-date reg-date">
+                                            <input type="text" name="last-visit" id="lastVisit" placeholder="Последний визит" autocomplete="off" readonly>
+                                            <input type="text" name="reg-date" id="regDate" placeholder="Дата регистрации" autocomplete="off" readonly>
+                                        </div>
+                                        <button type="submit" class="content-personal__change-btn red-btn">
+                                            <img src="img/personal/change.svg" alt="Икона Ручки" title="Изменить информацию">
+                                            <span class="red-btn__text">Изменить мою информацию</span>
+                                            <span class="red-btn__banner"></span>
+                                        </button>
+                                  </form>
+                                </div>
+                                <div class="content-personal__body">
+                                    <h3 class="content-personal__title title">Ваши заказы</h3>
+                                    <div class="content-personal__frame">
+                                      <div class="content-personal__bar personal-bar">
+                                        <ul class="personal-bar__list">
+                                            <li class="personal-bar__item">№ Заказа</li>
+                                            <li class="personal-bar__item">Количество</li>
+                                            <li class="personal-bar__item">Статус</li>
+                                            <li class="personal-bar__item">Всего</li>
+                                            <li class="personal-bar__item">Добавлено</li>
+                                            <li class="personal-bar__item">Подробнее</li>
+                                        </ul>
+                                      </div>
+                                      <div class="content-personal__order-block order-block">
+                                          <div class="order-block__order order">
+                                              <ul class="order-block__order-list">
+                                                  <div class="order-block__order-item order-item">
+                                                      <div class="order-item__frame">
+                                                          <div class="order-item__num order-item__text"><span>#288</span></div>
+                                                          <div class="order-item__quantity order-item__text"><span>1</span></div>
+                                                          <div class="order-item__status order-item__text"><span>Оброботка</span></div>
+                                                          <div class="order-item__total order-item__text"><span>6900</span>₽</div>
+                                                          <div class="order-item__add-date order-item__text"><span id="date">2024-02-08</span id="hours"><span>11:04:54</span></div>
+                                                          <div class="order-item__detail order-item__text">
+                                                              <button><img src="img/personal/detail.svg" alt="Икона для подробного просмотра информации о заказе" title="Подробно"></button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </ul>
+                                          </div>
+                                          <div class="order-block__order order">
+                                              <ul class="order-block__order-list">
+                                                  <div class="order-block__order-item order-item">
+                                                      <div class="order-item__frame">
+                                                          <div class="order-item__num order-item__text"><span>#288</span></div>
+                                                          <div class="order-item__quantity order-item__text"><span>1</span></div>
+                                                          <div class="order-item__status order-item__text"><span>Оброботка</span></div>
+                                                          <div class="order-item__total order-item__text"><span>6900</span>₽</div>
+                                                          <div class="order-item__add-date order-item__text"><span id="date">2024-02-08</span id="hours"><span>11:04:54</span></div>
+                                                          <div class="order-item__detail order-item__text">
+                                                              <button><img src="img/personal/detail.svg" alt="Икона для подробного просмотра информации о заказе" title="Подробно"></button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="content-personal__body">
+                                    <h3 class="content-personal__title title">Изменить пароль</h3>
+                                    <div class="content-personal__desc desc">Пожалуйста, введите новый пароль дважды, чтобы убедиться в правильности распечатки.</div>
+                                    <form action="/submit" method="get" id="regForm">
+                                        <div class="content-personal__password password-account">
+                                          <input type="pass" name="password" id="pass" placeholder="Пароль*" autocomplete="off" required>
+                                          <input type="pass" name="password" id="pass" placeholder="Повторите Пароль*" autocomplete="off" required>
+                                        </div>
+                                        <button type="submit" class="content-personal__password-btn red-btn">
+                                            <span>Сохранить</span>
+                                            <span class="red-btn__banner"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="personal__line line"></span>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </main>
+        <!-- Modal Menu For Detail Btn -->
+        <div class="main__detail-menu detail-menu">
+            <div class="detail-menu__frame">
+                <div class="detail-menu__close-btn close-btn"><span></span></div>
+                <div class="detail__title title"><h2>Заказ No <span>#288</span></h2></div>
+                <div class="detail-menu__bar personal-bar">
+                    <ul class="personal-bar__list">
+                        <li class="personal-bar__item">№</li>
+                        <li class="personal-bar__item">Фото</li>
+                        <li class="personal-bar__item">Наименование</li>
+                        <li class="personal-bar__item">Цена</li>
+                        <li class="personal-bar__item">Количество</li>
+                        <li class="personal-bar__item">Сумма</li>
+                    </ul>
+                </div>
+                <div class="content-personal__order-block order-block">
+                    <div class="order-block__order order">
+                        <ul class="order-block__order-list">
+                            <div class="order-block__order-item order-item">
+                                <div class="order-item__frame">
+                                    <div class="order-item__no order-item__text"><span>1</span></div>
+                                    <div class="order-item__image order-item__text">
+                                        <div class="order-item__image-frame">
+                                            <img src="img/personal/item/item.jpeg" alt="Изображения Товара" title="Изображения Товара">
+                                        </div>
+                                    </div>
+                                    <div class="order-item__name order-item__text"><span>Название Товара</span></div>
+                                    <div class="order-item__price order-item__text"><span>6900</span>₽</div>
+                                    <div class="order-item__quantity order-item__text"><span>1</span></div>
+                                    <div class="order-item__total order-item__text"><span>6900</span>₽</div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="detail-menu_total total-menu">
+                    <div class="total-menu__frame">
+                        <div class="total-menu__item-price price-total">
+                            <div class="item-price__title price-total__title"><span>Сумма</span></div>
+                            <div class="item-price__price price-total__total"><span>6900</span>₽</div>
+                        </div>
+                        <div class="total-menu__plus total-menu__obj"><span>+</span></div>
+                        <div class="total-menu__delivery-price price-total">
+                            <div class="delivery-price__title price-total__title"><span>Сумма</span></div>
+                            <div class="delivery-price__price price-total__total"><span>150</span>₽</div>
+                        </div>
+                        <div class="total-menu__plus total-menu__obj"><span>=</span></div>
+                        <div class="total-menu__delivery-price price-total">
+                            <div class="delivery-price__title price-total__title"><span>Общая Сумма</span></div>
+                            <div class="delivery-price__price price-total__total"><span>7050</span>₽</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-menu__content detail-content">
+                    <div class="detail-content__frame">
+                        <div class="detail-content__line line"></div>
+                        <div class="detail-content__item">
+                            <div class="detail-content__title"><span>Способ доставки</span>:</div>
+                            <div class="detail-content__content"><span>Доставка Курьером</span></div>
+                        </div>
+                        <div class="detail-content__item">
+                            <div class="detail-content__title"><span>Способ оплаты</span>:</div>
+                            <div class="detail-content__content"><span>Наличными</span></div>
+                        </div>
+                        <div class="detail-content__item">
+                            <div class="detail-content__title"><span>Дата заказа</span>:</div>
+                            <div class="detail-content__content"><span>Март 11</span>,<span>2024</span>,<span>18:13</span></div>
+                        </div>
+                        <div class="detail-content__item">
+                            <div class="detail-content__title"><span>Статус</span>:</div>
+                            <div class="detail-content__content"><span>Доставлено</span></div>
+                        </div>
+                        <div class="detail-content__item">
+                            <div class="detail-content__title"><span>Номер телефона</span>:</div>
+                            <div class="detail-content__content"><span>+7(423)0000000</span></div>
+                        </div>
+                        <div class="detail-content__item">
+                            <div class="detail-content__title"><span>Телефон получателья</span>:</div>
+                            <div class="detail-content__content"><span>+7(423)0000000</span></div>
+                        </div>
+                        <div class="detail-content__item">
+                            <div class="detail-content__title"><span>Адрес</span>:</div>
+                            <div class="detail-content__content"><span>Москва</span></div>
+                        </div>
+                        <div class="detail-content__item">
+                            <div class="detail-content__title"><span>Дата и время доставки</span>:</div>
+                            <div class="detail-content__content"><span>Март 11</span>,<span>2024</span>,<span>18:13</span></div>
+                        </div>
+                        <div class="detail-content__line line"></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+        <!-- Footer ====================================================== -->
+        <footer class="footer">
+          <div class="footer__container __container">
+            <div class="footer__frame">
+              <div class="footer__top">
+                <div class="footer__logo">
+                  <a href="index.html"><img src="img/footer/logo.svg" alt="Fast Шашлык" title="Главная Страница"></a>
+                </div>
+                <div class="footer__menu">
+                  <div class="footer__column">
+                    <nav class="footer__nav">
+                      <h4>Для гостей</h4>
+                      <ul class="footer__list">
+                        <li class="footer__item"><a href="menu.html" title="Меню">Меню</a></li>
+                        <li class="footer__item"><a href="discount.html" title="Акции и скидки">Акции и скидки</a></li>
+                        <li class="footer__item"><a href="delivery.html" title="Доставка">Доставка</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="footer__column">
+                    <nav class="footer__nav">
+                      <h4>О нас</h4>
+                      <ul class="footer__list">
+                        <li class="footer__item"><a href="news.html" title="Новости">Новости</a></li>
+                        <li class="footer__item"><a href="contacts.html" title="Контакты">Контакты</a></li>
+                        <li class="footer__item"><a href="privacypolicy.html" title="Политика конфидеятельности ">Политика конфидеятельности </a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="footer__pay">
+                  <h4>Способы оплаты</h4>
+                  <ul class="footer__pay-list">
+                    <li class="footer__pay-item"><img src="img/footer/mastercard.svg" alt="Masterdcard Икона" title="Mastercard"></li>
+                    <li class="footer__pay-item"><img src="img/footer/visa.svg" alt="Visa Икона" title="Visa"></li>
+                    <li class="footer__pay-item"><img src="img/footer/mir.svg" alt="Мир Икона" title="Мир"></li>
+                  </ul>
+                </div>
+              </div>
+              <span class="footer__line"></span>
+              <div class="footer__bottom">
+                <ul class="footer__social-medias">
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/vk.svg" alt="Vkontakte" title="Вконтакте"></a></li>
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/facebook.svg" alt="Facebook" title="Facebook"></a></li>
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/instagram.svg" alt="Instagram" title="Instagram"></a></li>
+                </ul>
+                <div class="footer__copyright">
+                  <p>© 2024 FastShashlik</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- ============================================================= -->
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

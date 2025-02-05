@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Шашлык",
+        "price": 500,
+        "weight": 300,
+        "image": "img/main/menu/food.png",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem",
+        "category": "Шашлыки"
+    },
+    {
+        "id": 2,
+        "name": "Кола",
+        "price": 100,
+        "weight": 500,
+        "image": "img/main/menu/food.png",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem",
+        "category": "Напитки"
+    },
+    {
+        "id": 3,
+        "name": "Шаурма Классическая",
+        "price": 300,
+        "weight": 350,
+        "image": "img/main/menu/food.png",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem",
+        "category": "Шаурма"
+    },
+    {
+        "id": 4,
+        "name": "Суп Харчо",
+        "price": 150,
+        "weight": 400,
+        "image": "img/main/menu/food.png",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem",
+        "category": "Супы"
+    },
+    {
+        "id": 5,
+        "name": "Салат Цезарь",
+        "price": 200,
+        "weight": 250,
+        "image": "img/main/menu/food.png",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem",
+        "category": "Салаты"
+    },
+    {
+        "id": 6,
+        "name": "Картофель Фри",
+        "price": 120,
+        "weight": 150,
+        "image": "img/main/menu/food.png",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem",
+        "category": "Закуски"
+    },
+    {
+        "id": 7,
+        "name": "Овощи на мангале",
+        "price": 180,
+        "weight": 300,
+        "image": "img/main/menu/food.png",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem",
+        "category": "Овощи на мангале"
+    }
+]

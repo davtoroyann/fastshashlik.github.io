@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Title -->
+    <title>Fastest Шашлык</title>
+  </head>
+  <body>
+    <!-- ================================================================= -->
+    <div class="page_wrapper">
+      <div class="big_Container">
+        <!-- Header ====================================================== -->
+        <header class="header">
+          <div class="header__container __container">
+            <div class="header__logo">
+              <a href="index.html"><img src="img/header/logo1.svg" alt="Fastest Шашлык" title="Fastest Шашлык" id="logo"></a>
+            </div>
+            <nav class="header__nav menu">
+              <ul class="header__menu">
+                <li class="header__item"><a href="menu.html" title="Меню">Меню</a></li>
+                <li class="header__item"><a href="discount.html" title="Акции и скидки">Акции и скидки</a></li>
+                <li class="header__item"><a href="delivery.html" title="Доставка и оплата">Доставка и оплата</a></li>
+                <li class="header__item"><a href="about.html" title="О нас">О нас</a></li>
+                <li class="header__item"><a href="contacts.html" title="Контакты">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__tools">
+              <div class="header__basket">
+                <a href="cart.html">
+                  <img id="basket" src="img/header/basket1.svg" alt="Корзина" title="Корзина">
+                  <span id="cartCount">0</span>
+                </a>
+                <span class="header__tools-title">Корзина</span>
+              </div>
+              <div class="header__signup">
+                <a href="account.html"><img id="signUp" src="img/header/user1.svg" alt="Sign Up Icon" title="Войти"></a>
+                <span class="header__tools-title">Войти</span>
+              </div>
+            </div>
+            <!-- Burger-Menu -->
+            <div class="header__burger-menu burger-menu">
+              <div class="burger-menu__icon">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main ======================================================== -->
+        <main class="main">
+          <div class="main__container">
+            <!-- Checkout Block -->
+             <div class="main__checkout checkout">
+                <div class="checkout__container __container">
+                    <div class="breadcumb__frame">
+                      <nav aria-label="breadcrumb">
+                        <ul class="breadcrumb">
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="cart.html">Корзина</a></li>
+                            <li>Оформления Заказа</li>
+                        </ul>
+                    </div>
+                    <h2 class="checkout__title title">Оформления Заказа</h2>
+                    <div class="checkout__body">
+                        <span class="checkout__line line"></span>  
+                        <div class="checkout__frame">
+                            <form action="/submit" method="get" id="checkoutForm" class="checkout__form">
+                                <!-- Checkout Delivery Address -->
+                                <div class="checkout__delivery-address">
+                                  <h3>Адрес доставки</h3>
+                                  <div class="checkout__contacts contacts">
+                                    <h4>Контакты</h4>
+                                    <div class="checkout__contacts-frame contacts-frame">
+                                      <input type="text" name="name" id="name" placeholder="Имя*" autocomplete="off" required>
+                                      <input type="text" name="number" id="number" placeholder="Телефон*" autocomplete="off" required>
+                                    </div>
+                                  </div>
+                                  <div class="checkout__address address">
+                                    <h4>Адрес</h4>
+                                    <div class="checkout__address-street address-street">
+                                      <input type="text" name="home" id="home" placeholder="Улица, Дом / Корпус*" autocomplete="off" required>
+                                    </div>
+                                    <div class="checkout__address-floor address-floor">
+                                      <input type="text" name="front" id="front" placeholder="Подьезд*" autocomplete="off" required>
+                                      <input type="text" name="floor" id="floor" placeholder="Этаж*" autocomplete="off" required>
+                                      <input type="text" name="apartment" id="apartment" placeholder="Квартира*" autocomplete="off" required>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Checkout Delivery Method -->
+                                <div class="checkout__delivery-method">
+                                  <h3>Способ Доставки</h3>
+                                  <div class="checkout__delivery">
+                                    <div class="delivery__radio-frame">
+                                      <label class="delivery__radio">
+                                        <input type="radio" name="delivery" id="delivery" value="1" checked>
+                                        <span class="radio-circle"></span>
+                                      </label>
+                                      <div class="delivery__content">
+                                        <span>Самовывоз</span>
+                                        <span class="checkout__delivery-amount">0.00 ₽</span>
+                                      </div>
+                                    </div>
+                                    <div class="delivery__radio-frame">
+                                      <label class="delivery__radio">
+                                        <input type="radio" name="delivery" id="delivery" value="2">
+                                        <span class="radio-circle"></span>
+                                      </label>
+                                      <div class="delivery__content">
+                                        <span>до 5 км и при заказе от 2000 руб: </span>
+                                        <span class="checkout__delivery-amount">300 ₽</span>
+                                      </div>
+                                    </div>
+                                    <div class="delivery__radio-frame">
+                                      <label class="delivery__radio">
+                                        <input type="radio" name="delivery" id="delivery" value="3">
+                                        <span class="radio-circle"></span>
+                                      </label>
+                                      <div class="delivery__content">
+                                        <span>до 10 км и при заказе от 3000 руб: </span>
+                                        <span class="checkout__delivery-amount">600 ₽</span>
+                                      </div>
+                                    </div>
+                                    <div class="delivery__radio-frame">
+                                      <label class="delivery__radio">
+                                        <input type="radio" name="delivery" id="delivery" value="4">
+                                        <span class="radio-circle"></span>
+                                      </label>
+                                      <div class="delivery__content">
+                                        <span>до 15 км и при заказе от 4000 руб: </span>
+                                        <span class="checkout__delivery-amount">700 ₽</span>
+                                      </div>
+                                    </div>
+                                    <div class="delivery__radio-frame">
+                                      <label class="delivery__radio">
+                                        <input type="radio" name="delivery" id="delivery" value="5">
+                                        <span class="radio-circle"></span>
+                                      </label>
+                                      <div class="delivery__content">
+                                        <span>до 20 км и при заказе от 5000 руб: </span>
+                                        <span class="checkout__delivery-amount">1000 ₽</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Checkout Additional for Comments -->
+                                <div class="checkout__additional">
+                                  <h3>Дополнительно</h3>
+                                  <textarea name="message" id="message" placeholder="Комментарий" autocomplete="off"></textarea>
+                                </div>
+                                <!-- Checkout Pay Method -->
+                                 <div class="checkout__pay-method">
+                                  <h3>Способы Оплаты</h3>
+                                  <div class="checkout__pay">
+                                    <div class="checkout__pay-frame">
+                                      <label class="checkout__pay-radio">
+                                        <input type="radio" name="pay" id="pay" checked>
+                                        <span class="radio-circle"></span>
+                                      </label>
+                                      <div class="checkout__pay-content">
+                                        <p>Наличными</p>
+                                      </div>
+                                    </div>
+                                    <div class="checkout__pay-frame">
+                                      <label class="checkout__pay-radio">
+                                        <input type="radio" name="pay" id="pay">
+                                        <span class="radio-circle"></span>
+                                      </label>
+                                      <div class="checkout__pay-content">
+                                        <p>Оплатить по Robokassa</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 </div>
+                                <!-- Checkout Agreement -->
+                                <div class="checkout__agreement">
+                                  <label for="agreement" class="checkout__agreement-checkbox">
+                                    <input type="checkbox" required id="agreement" name="agreement">
+                                    <span class="checkbox-square"></span>
+                                  </label>
+                                  <p>я соглашаюсь с пользовательским соглашением*.</p>
+                                </div>
+                                <!-- Checkout Button -->
+                                <button type="submit" class="checkout__button red-btn">
+                                  <span>Оформить заказ</span>
+                                  <span class="red-btn__banner"></span>
+                                </button>
+                            </form>
+                            <div class="checkout__cart">
+                              <h3>Корзина</h3>
+                              <div class="checkout__cart-frame">
+                                <div class="cart__items"></div>
+                                <div class="cart__total">
+                                    <h3>Итого: <span id="totalPrice">0</span> руб</h3>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <span class="checkout__line line"></span>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </main>
+
+        <!-- Footer ====================================================== -->
+        <footer class="footer">
+          <div class="footer__container __container">
+            <div class="footer__frame">
+              <div class="footer__top">
+                <div class="footer__logo">
+                  <a href="index.html"><img src="img/footer/logo.svg" alt="Fast Шашлык" title="Главная Страница"></a>
+                </div>
+                <div class="footer__menu">
+                  <div class="footer__column">
+                    <nav class="footer__nav">
+                      <h4>Для гостей</h4>
+                      <ul class="footer__list">
+                        <li class="footer__item"><a href="menu.html" title="Меню">Меню</a></li>
+                        <li class="footer__item"><a href="discount.html" title="Акции и скидки">Акции и скидки</a></li>
+                        <li class="footer__item"><a href="delivery.html" title="Доставка">Доставка</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="footer__column">
+                    <nav class="footer__nav">
+                      <h4>О нас</h4>
+                      <ul class="footer__list">
+                        <li class="footer__item"><a href="news.html" title="Новости">Новости</a></li>
+                        <li class="footer__item"><a href="contacts.html" title="Контакты">Контакты</a></li>
+                        <li class="footer__item"><a href="privacypolicy.html" title="Политика конфидеятельности">Политика конфидеятельности </a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="footer__pay">
+                  <h4>Способы оплаты</h4>
+                  <ul class="footer__pay-list">
+                    <li class="footer__pay-item"><img src="img/footer/mastercard.svg" alt="Masterdcard Икона" title="Mastercard"></li>
+                    <li class="footer__pay-item"><img src="img/footer/visa.svg" alt="Visa Икона" title="Visa"></li>
+                    <li class="footer__pay-item"><img src="img/footer/mir.svg" alt="Мир Икона" title="Мир"></li>
+                  </ul>
+                </div>
+              </div>
+              <span class="footer__line"></span>
+              <div class="footer__bottom">
+                <ul class="footer__social-medias">
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/vk.svg" alt="Vkontakte" title="Вконтакте"></a></li>
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/facebook.svg" alt="Facebook" title="Facebook"></a></li>
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/instagram.svg" alt="Instagram" title="Instagram"></a></li>
+                </ul>
+                <div class="footer__copyright">
+                  <p>© 2024 FastShashlik</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- ============================================================= -->
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

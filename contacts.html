@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Title -->
+    <title>Fastest Шашлык</title>
+  </head>
+  <body>
+    <!-- ================================================================= -->
+    <div class="page_wrapper">
+      <div class="big_Container">
+        <!-- Header ====================================================== -->
+        <header class="header">
+          <div class="header__container __container">
+            <div class="header__logo">
+              <a href="index.html"><img src="img/header/logo1.svg" alt="Fastest Шашлык" title="Fastest Шашлык" id="logo"></a>
+            </div>
+            <nav class="header__nav menu">
+              <ul class="header__menu">
+                <li class="header__item"><a href="menu.html" title="Меню">Меню</a></li>
+                <li class="header__item"><a href="discount.html" title="Акции и скидки">Акции и скидки</a></li>
+                <li class="header__item"><a href="delivery.html" title="Доставка и оплата">Доставка и оплата</a></li>
+                <li class="header__item"><a href="about.html" title="О нас">О нас</a></li>
+                <li class="header__item"><a href="contacts.html" title="Контакты" id="redTab">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__tools">
+              <div class="header__basket">
+                <a href="cart.html">
+                  <img id="basket" src="img/header/basket1.svg" alt="Корзина" title="Корзина">
+                  <span id="cartCount">0</span>
+                </a>
+                <span class="header__tools-title">Корзина</span>
+              </div>
+              <div class="header__signup">
+                <a href="account.html"><img id="signUp" src="img/header/user1.svg" alt="Sign Up Icon" title="Войти"></a>
+                <span class="header__tools-title">Войти</span>
+              </div>
+            </div>
+            <!-- Burger-Menu -->
+            <div class="header__burger-menu burger-menu">
+              <div class="burger-menu__icon">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main ======================================================== -->
+        <main class="main">
+          <div class="main__container">
+            <!-- Contacts Page Block  -->
+             <div class="main__contacts contacts">
+                    <div class="contacts__container __container">
+                      <div class="breadcumb__frame">
+                        <nav aria-label="breadcrumb">
+                          <ul class="breadcrumb">
+                              <li><a href="/">Главная</a></li>
+                              <li>Контакты</li>
+                          </ul>
+                    </div>
+                    <h2 class="contacts__title title">Контакты</h2>
+                    <p class="contacts__desc desc">Мы всегда рады помочь вам и <span>ответить на все ваши вопросы</span>. Свяжитесь с нами удобным для вас способом!</p>
+                    <span class="contacts__line line"></span>
+                    <div class="contacts__body">
+                      <div class="contacts__block block-contacts">
+                        <div class="block-contacts__left left-contacts">
+                          <div class="left-contacts__contacts left-contacts__address">
+                            <h3>Наш Адрес</h3>
+                            <address>Москва, бескудниковский бул., 13</address>
+                          </div>
+                          <div class="left-contacts__contacts left-contacts__phone">
+                            <h3>Номер Телефона</h3>
+                            <a href="tel:+79167636000" title="Номер Телефона">+7 (916) 763-60-00</a>
+                          </div>
+                          <div class="left-contacts__contacts left-contacts__hours">
+                            <h3>Номер Телефона</h3>
+                            <p>Ежедневно 09:00 до 23:00</p>
+                          </div>
+                          <div class="left-contacts__contacts left-contacts__mail">
+                            <h3>Адрес Эл. Почты</h3>
+                            <a href="mailto:info@fastestshashlik.ru">info@fastestshashlik.ru</a>
+                          </div>
+                        </div>
+                        <span class="block-contacts__line"></span>
+                        <div class="block-contacts__right right-contacts">
+                          <form action="/submit" method="get" id="contactsForm" class="right-contacts__form">
+                            <h3>Мы на связи</h3>
+                            <p>Заказать обратный звонок</p>
+                            <div class="right-contacts__form-block right-contacts__form-name">
+                              <input type="text" name="name" id="name" placeholder="Имя*" autocomplete="off" required>
+                            </div>
+                            <div class="right-contacts__form-block right-contacts__form-number">
+                              <input type="text" name="number" id="number" placeholder="Телефон*" autocomplete="off" required>
+                              <span>Пожалуйста, введите номер телефона, начиная с "+"!</span>
+                            </div>
+                            <div class="right-contacts__form-block right-contacts__form-message">
+                              <textarea name="message" required id="message" placeholder="Сообщение" autocomplete="off" aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="right-contacts__btn red-btn">
+                              <span>Отправить</span>
+                              <span class="red-btn__banner"></span>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="contacts__line line"></div>
+                      <div class="contacts__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48784.58647243744!2d44.466176000000004!3d40.1637376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sam!4v1722249868552!5m2!1sru!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                    <span class="contacts__line line"></span>
+                </div>
+             </div>
+          </div>
+        </main>
+
+        <!-- Footer ====================================================== -->
+        <footer class="footer">
+          <div class="footer__container __container">
+            <div class="footer__frame">
+              <div class="footer__top">
+                <div class="footer__logo">
+                  <a href="index.html"><img src="img/footer/logo.svg" alt="Fast Шашлык" title="Главная Страница"></a>
+                </div>
+                <div class="footer__menu">
+                  <div class="footer__column">
+                    <nav class="footer__nav">
+                      <h4>Для гостей</h4>
+                      <ul class="footer__list">
+                        <li class="footer__item"><a href="menu.html" title="Меню">Меню</a></li>
+                        <li class="footer__item"><a href="discount.html" title="Акции и скидки">Акции и скидки</a></li>
+                        <li class="footer__item"><a href="delivery.html" title="Доставка">Доставка</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="footer__column">
+                    <nav class="footer__nav">
+                      <h4>О нас</h4>
+                      <ul class="footer__list">
+                        <li class="footer__item"><a href="news.html" title="Новости">Новости</a></li>
+                        <li class="footer__item"><a href="contacts.html" title="Контакты" id="redTab">Контакты</a></li>
+                        <li class="footer__item"><a href="privacypolicy.html" title="Политика конфидеятельности ">Политика конфидеятельности </a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="footer__pay">
+                  <h4>Способы оплаты</h4>
+                  <ul class="footer__pay-list">
+                    <li class="footer__pay-item"><img src="img/footer/mastercard.svg" alt="Masterdcard Икона" title="Mastercard"></li>
+                    <li class="footer__pay-item"><img src="img/footer/visa.svg" alt="Visa Икона" title="Visa"></li>
+                    <li class="footer__pay-item"><img src="img/footer/mir.svg" alt="Мир Икона" title="Мир"></li>
+                  </ul>
+                </div>
+              </div>
+              <span class="footer__line"></span>
+              <div class="footer__bottom">
+                <ul class="footer__social-medias">
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/vk.svg" alt="Vkontakte" title="Вконтакте"></a></li>
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/facebook.svg" alt="Facebook" title="Facebook"></a></li>
+                  <li class="footer__social-item"><a href="#"><img src="img/footer/instagram.svg" alt="Instagram" title="Instagram"></a></li>
+                </ul>
+                <div class="footer__copyright">
+                  <p>© 2024 FastShashlik</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- ============================================================= -->
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
